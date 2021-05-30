@@ -1,0 +1,16 @@
+C:\Users\paliv\proyectosDotnet\practica1ej3\bin\Debug\net5.0\practica1ej3.exe
+C:\Users\paliv\proyectosDotnet\practica1ej3\bin\Debug\net5.0\practica1ej3.deps.json
+C:\Users\paliv\proyectosDotnet\practica1ej3\bin\Debug\net5.0\practica1ej3.runtimeconfig.json
+C:\Users\paliv\proyectosDotnet\practica1ej3\bin\Debug\net5.0\practica1ej3.runtimeconfig.dev.json
+C:\Users\paliv\proyectosDotnet\practica1ej3\bin\Debug\net5.0\practica1ej3.dll
+C:\Users\paliv\proyectosDotnet\practica1ej3\bin\Debug\net5.0\ref\practica1ej3.dll
+C:\Users\paliv\proyectosDotnet\practica1ej3\bin\Debug\net5.0\practica1ej3.pdb
+C:\Users\paliv\proyectosDotnet\practica1ej3\obj\Debug\net5.0\practica1ej3.csprojAssemblyReference.cache
+C:\Users\paliv\proyectosDotnet\practica1ej3\obj\Debug\net5.0\practica1ej3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paliv\proyectosDotnet\practica1ej3\obj\Debug\net5.0\practica1ej3.AssemblyInfoInputs.cache
+C:\Users\paliv\proyectosDotnet\practica1ej3\obj\Debug\net5.0\practica1ej3.AssemblyInfo.cs
+C:\Users\paliv\proyectosDotnet\practica1ej3\obj\Debug\net5.0\practica1ej3.csproj.CoreCompileInputs.cache
+C:\Users\paliv\proyectosDotnet\practica1ej3\obj\Debug\net5.0\practica1ej3.dll
+C:\Users\paliv\proyectosDotnet\practica1ej3\obj\Debug\net5.0\ref\practica1ej3.dll
+C:\Users\paliv\proyectosDotnet\practica1ej3\obj\Debug\net5.0\practica1ej3.pdb
+C:\Users\paliv\proyectosDotnet\practica1ej3\obj\Debug\net5.0\practica1ej3.genruntimeconfig.cache

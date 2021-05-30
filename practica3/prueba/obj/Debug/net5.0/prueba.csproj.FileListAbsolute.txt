@@ -1,0 +1,16 @@
+C:\Users\paliv\proyectosDotnet\practica3\prueba\bin\Debug\net5.0\prueba.exe
+C:\Users\paliv\proyectosDotnet\practica3\prueba\bin\Debug\net5.0\prueba.deps.json
+C:\Users\paliv\proyectosDotnet\practica3\prueba\bin\Debug\net5.0\prueba.runtimeconfig.json
+C:\Users\paliv\proyectosDotnet\practica3\prueba\bin\Debug\net5.0\prueba.runtimeconfig.dev.json
+C:\Users\paliv\proyectosDotnet\practica3\prueba\bin\Debug\net5.0\prueba.dll
+C:\Users\paliv\proyectosDotnet\practica3\prueba\bin\Debug\net5.0\ref\prueba.dll
+C:\Users\paliv\proyectosDotnet\practica3\prueba\bin\Debug\net5.0\prueba.pdb
+C:\Users\paliv\proyectosDotnet\practica3\prueba\obj\Debug\net5.0\prueba.csprojAssemblyReference.cache
+C:\Users\paliv\proyectosDotnet\practica3\prueba\obj\Debug\net5.0\prueba.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paliv\proyectosDotnet\practica3\prueba\obj\Debug\net5.0\prueba.AssemblyInfoInputs.cache
+C:\Users\paliv\proyectosDotnet\practica3\prueba\obj\Debug\net5.0\prueba.AssemblyInfo.cs
+C:\Users\paliv\proyectosDotnet\practica3\prueba\obj\Debug\net5.0\prueba.csproj.CoreCompileInputs.cache
+C:\Users\paliv\proyectosDotnet\practica3\prueba\obj\Debug\net5.0\prueba.dll
+C:\Users\paliv\proyectosDotnet\practica3\prueba\obj\Debug\net5.0\ref\prueba.dll
+C:\Users\paliv\proyectosDotnet\practica3\prueba\obj\Debug\net5.0\prueba.pdb
+C:\Users\paliv\proyectosDotnet\practica3\prueba\obj\Debug\net5.0\prueba.genruntimeconfig.cache

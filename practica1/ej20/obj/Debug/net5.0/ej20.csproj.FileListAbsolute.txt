@@ -1,0 +1,16 @@
+C:\Users\paliv\proyectosDotnet\practica1\ej20\bin\Debug\net5.0\ej20.exe
+C:\Users\paliv\proyectosDotnet\practica1\ej20\bin\Debug\net5.0\ej20.deps.json
+C:\Users\paliv\proyectosDotnet\practica1\ej20\bin\Debug\net5.0\ej20.runtimeconfig.json
+C:\Users\paliv\proyectosDotnet\practica1\ej20\bin\Debug\net5.0\ej20.runtimeconfig.dev.json
+C:\Users\paliv\proyectosDotnet\practica1\ej20\bin\Debug\net5.0\ej20.dll
+C:\Users\paliv\proyectosDotnet\practica1\ej20\bin\Debug\net5.0\ref\ej20.dll
+C:\Users\paliv\proyectosDotnet\practica1\ej20\bin\Debug\net5.0\ej20.pdb
+C:\Users\paliv\proyectosDotnet\practica1\ej20\obj\Debug\net5.0\ej20.csprojAssemblyReference.cache
+C:\Users\paliv\proyectosDotnet\practica1\ej20\obj\Debug\net5.0\ej20.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paliv\proyectosDotnet\practica1\ej20\obj\Debug\net5.0\ej20.AssemblyInfoInputs.cache
+C:\Users\paliv\proyectosDotnet\practica1\ej20\obj\Debug\net5.0\ej20.AssemblyInfo.cs
+C:\Users\paliv\proyectosDotnet\practica1\ej20\obj\Debug\net5.0\ej20.csproj.CoreCompileInputs.cache
+C:\Users\paliv\proyectosDotnet\practica1\ej20\obj\Debug\net5.0\ej20.dll
+C:\Users\paliv\proyectosDotnet\practica1\ej20\obj\Debug\net5.0\ref\ej20.dll
+C:\Users\paliv\proyectosDotnet\practica1\ej20\obj\Debug\net5.0\ej20.pdb
+C:\Users\paliv\proyectosDotnet\practica1\ej20\obj\Debug\net5.0\ej20.genruntimeconfig.cache

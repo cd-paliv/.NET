@@ -1,0 +1,16 @@
+C:\Users\paliv\proyectosDotnet\teoria6\bin\Debug\net5.0\teoria6.exe
+C:\Users\paliv\proyectosDotnet\teoria6\bin\Debug\net5.0\teoria6.deps.json
+C:\Users\paliv\proyectosDotnet\teoria6\bin\Debug\net5.0\teoria6.runtimeconfig.json
+C:\Users\paliv\proyectosDotnet\teoria6\bin\Debug\net5.0\teoria6.runtimeconfig.dev.json
+C:\Users\paliv\proyectosDotnet\teoria6\bin\Debug\net5.0\teoria6.dll
+C:\Users\paliv\proyectosDotnet\teoria6\bin\Debug\net5.0\ref\teoria6.dll
+C:\Users\paliv\proyectosDotnet\teoria6\bin\Debug\net5.0\teoria6.pdb
+C:\Users\paliv\proyectosDotnet\teoria6\obj\Debug\net5.0\teoria6.csprojAssemblyReference.cache
+C:\Users\paliv\proyectosDotnet\teoria6\obj\Debug\net5.0\teoria6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paliv\proyectosDotnet\teoria6\obj\Debug\net5.0\teoria6.AssemblyInfoInputs.cache
+C:\Users\paliv\proyectosDotnet\teoria6\obj\Debug\net5.0\teoria6.AssemblyInfo.cs
+C:\Users\paliv\proyectosDotnet\teoria6\obj\Debug\net5.0\teoria6.csproj.CoreCompileInputs.cache
+C:\Users\paliv\proyectosDotnet\teoria6\obj\Debug\net5.0\teoria6.dll
+C:\Users\paliv\proyectosDotnet\teoria6\obj\Debug\net5.0\ref\teoria6.dll
+C:\Users\paliv\proyectosDotnet\teoria6\obj\Debug\net5.0\teoria6.pdb
+C:\Users\paliv\proyectosDotnet\teoria6\obj\Debug\net5.0\teoria6.genruntimeconfig.cache

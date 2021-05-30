@@ -1,0 +1,16 @@
+C:\Users\paliv\proyectosDotnet\teoria4\bin\Debug\net5.0\teoria4.exe
+C:\Users\paliv\proyectosDotnet\teoria4\bin\Debug\net5.0\teoria4.deps.json
+C:\Users\paliv\proyectosDotnet\teoria4\bin\Debug\net5.0\teoria4.runtimeconfig.json
+C:\Users\paliv\proyectosDotnet\teoria4\bin\Debug\net5.0\teoria4.runtimeconfig.dev.json
+C:\Users\paliv\proyectosDotnet\teoria4\bin\Debug\net5.0\teoria4.dll
+C:\Users\paliv\proyectosDotnet\teoria4\bin\Debug\net5.0\ref\teoria4.dll
+C:\Users\paliv\proyectosDotnet\teoria4\bin\Debug\net5.0\teoria4.pdb
+C:\Users\paliv\proyectosDotnet\teoria4\obj\Debug\net5.0\teoria4.csprojAssemblyReference.cache
+C:\Users\paliv\proyectosDotnet\teoria4\obj\Debug\net5.0\teoria4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\paliv\proyectosDotnet\teoria4\obj\Debug\net5.0\teoria4.AssemblyInfoInputs.cache
+C:\Users\paliv\proyectosDotnet\teoria4\obj\Debug\net5.0\teoria4.AssemblyInfo.cs
+C:\Users\paliv\proyectosDotnet\teoria4\obj\Debug\net5.0\teoria4.csproj.CoreCompileInputs.cache
+C:\Users\paliv\proyectosDotnet\teoria4\obj\Debug\net5.0\teoria4.dll
+C:\Users\paliv\proyectosDotnet\teoria4\obj\Debug\net5.0\ref\teoria4.dll
+C:\Users\paliv\proyectosDotnet\teoria4\obj\Debug\net5.0\teoria4.pdb
+C:\Users\paliv\proyectosDotnet\teoria4\obj\Debug\net5.0\teoria4.genruntimeconfig.cache
