@@ -31,6 +31,14 @@ namespace ej8
             Console.Write("\n\nDiagonal secundaria de B: ");
             foreach (double d in B.GetDiagonalSecundaria()) Console.Write("{0} ", d);
 
+            /* Console.WriteLine("\n\nArreglo de arreglos: ");
+            double[][] ada = B.GetArregloDeArreglo();
+            for(int i = 0; i < B.getColumnas(); i++){
+                for (int j = 0; j < B.getFilas(); j++){
+                    Console.Write(ada[i][j] + " ");
+                }
+            }*/
+
             try{
                 A.MultiplicarPor(B);
                 Console.WriteLine("\n\nA multiplicado por B");
@@ -38,7 +46,7 @@ namespace ej8
             }
             catch (ArgumentException e){
                 Console.WriteLine(e.Message);
-            }
+            }//las matrices sólo se pueden multiplicar si las filas de A coinciden con las columnas de B
 
             Console.ReadKey();
         }
@@ -118,14 +126,15 @@ namespace ej8
             }
             return vector;
         }
+
         public double[] GetDiagonalPrincipal() //esq sup izq a esq inf der
         {
-            if (_filas != _columnas){
+            if (_filas != _columnas){ //si NO es un cuadrado no se puede sacar una diagonal "recta"
                 throw new ArgumentException ("ERROR: La matriz no es cuadrada");
             }
-            double[] vector = new double[_filas];
+            double[] vector = new double[_filas]; //como es un cuadrado también podría poner _columnas
             for(int i = 0; i < _filas; i++){
-                vector[i] = m[i, i];
+                vector[i] = m[i, i]; //con la i obtengo la posicion en la matriz
             }
             return vector;
         }
@@ -140,6 +149,7 @@ namespace ej8
             }
             return vector;
         }
+
         public double[][] GetArregloDeArreglo()
         {
             //creo arreglo (de arreglos) con longitud de filas

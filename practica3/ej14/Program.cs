@@ -66,7 +66,7 @@ namespace ej14
 
 
 /*
-        //LO MISMO PERO DE FORMA RECURSIVA
+        //LO MISMO PERO DE FORMA RECURSIVA Y SIN PILA
         
         static void Bases(int nro, int b)
         {

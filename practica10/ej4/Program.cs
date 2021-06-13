@@ -10,7 +10,7 @@ namespace ej4
             Task[] v=new Task[100];
             for(int i = 0 ; i < 100 ; i++)
             {
-                v[i] = new Task( (o) => Imprimir(o) , i);
+                v[i] = new Task(Imprimir, i); //(o) => Imprimir(o) , i
                 v[i].Start();
             }
 

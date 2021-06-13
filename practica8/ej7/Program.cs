@@ -15,7 +15,7 @@ namespace ej7
         }
     }
 
-    delegate void LineasContadasEventHandler();
+    delegate void LineasContadasEventHandler(); //el compilador crea un campo privado EventHandler e implementa descriptores de acceso
 
     class ContadorDeLineas
     {
@@ -24,7 +24,7 @@ namespace ej7
         {
             Ingresador _ingresador = new Ingresador();
             //_ingresador.Contador = this;
-            _ingresador.NroIngresado = UnaLineaMas;
+            _ingresador.NroIngresado = UnaLineaMas; //a NroIngresado le asigno el método UnaLineaMas, cada vez que haga Invoke va a invocar ese método
             _ingresador.Ingresar();
             Console.WriteLine($"Cantidad de líneas ingresadas: {_cantLineas}");
         }
@@ -33,14 +33,14 @@ namespace ej7
     class Ingresador
     {
         //public ContadorDeLineas Contador {get;set;} esto no debería ir
-        public LineasContadasEventHandler NroIngresado;
+        public LineasContadasEventHandler NroIngresado; //en lugar de usar el objeto, uso un descriptor de acceso
         public void Ingresar()
         {
             string st = Console.ReadLine();
             while (st != "")
             {
                 //Contador.UnaLineaMas();
-                if(NroIngresado != null) NroIngresado.Invoke();
+                if(NroIngresado != null) NroIngresado.Invoke(); //si hay algún suscriptor, invoco
                 st = Console.ReadLine();
             }
         }

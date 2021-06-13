@@ -30,7 +30,7 @@ namespace ej10
 
     }
 
-    delegate void PrecioCambiadoEventHandler (object sender, PrecioCambiadoEventArgs e); //declaramos nuestro delegado por el cual podemos enviar informacion
+    delegate void PrecioCambiadoEventHandler (object sender, PrecioCambiadoEventArgs e); //descriptor de acceso abreviado (add - remove)
 
     class Articulo
     {

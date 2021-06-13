@@ -14,6 +14,17 @@ namespace ej7
             n.Insertar(1);
             n.Insertar(5);
             n.Insertar(14);
+
+            /*
+                    7
+                   /  \
+                  3    8
+                 / \    \
+                1   5    10
+                           \
+                            14
+            */
+
             ArrayList l = n.GetInorden();
             if (l == null) Console.WriteLine("No hay elementos en el arbol");
             else{
@@ -22,10 +33,10 @@ namespace ej7
                 }
             }
             Console.WriteLine();
-            Console.WriteLine("Altura: " + n.GetAltura());
-            Console.WriteLine("Cantidad de nodos: " + n.GetCantNodos());
-            Console.WriteLine("Valor max: " + n.GetValorMaximo());
-            Console.WriteLine("Valor min: " + n.GetValorMinimo());
+            Console.WriteLine("Altura: " + n.GetAltura()); //3
+            Console.WriteLine("Cantidad de nodos: " + n.GetCantNodos()); //7
+            Console.WriteLine("Valor max: " + n.GetValorMaximo()); //14
+            Console.WriteLine("Valor min: " + n.GetValorMinimo()); //1
             Console.ReadKey();
         }
     }
@@ -60,7 +71,7 @@ namespace ej7
             }
         }
 
-        private void GetInorder(Nodo n, ArrayList l)
+        private void GetInorder(Nodo n, ArrayList l) //de menor a mayor
         {
             if(n != null){
                 GetInorder(n.HI, l);
@@ -75,7 +86,6 @@ namespace ej7
             return l;
         }
 
-
         private int calcularAltura(Nodo n)
         {
             if(n != null){
@@ -87,20 +97,18 @@ namespace ej7
             return calcularAltura(this) - 1; //le resto la raíz xq tiene altura 0
         }
 
-        
-        
         private int Cantidad(Nodo n, int cant)
         {
             if(n != null){
                 return 1 + Cantidad(n.HI, cant) + Cantidad(n.HD, cant);
             }else return 0;
-        }
+        }//devuelve el nodo actual + la cant de hijos a su izq + la cant de hijos a su der
         public int GetCantNodos()
         {
             return Cantidad(this, 0);
         }
 
-        public int GetValorMaximo()
+        public int GetValorMaximo() //arbol binario, su máx va a estar en el nodo más a la der
         {
             if(this != null){
                 Nodo aux = this;

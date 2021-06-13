@@ -71,12 +71,13 @@ namespace ej5
 
             if(l1.Cantidad < l2.Cantidad){
                 //lista2 tiene más elementos que lista1
-                IEnumerable e1 = ElementosDe(l1);
-                IEnumerator elem1 = e1.GetEnumerator();
+                IEnumerable e1 = ElementosDe(l1); //todos los elem de la l1
+                IEnumerator elem1 = e1.GetEnumerator(); //enumerador para poder recorrer l1
                 foreach(int elem2 in l2)
                 {
-                    if(elem1.MoveNext()) nuevaL.Agregar(delegado((int)elem1.Current, elem2));
-                    else nuevaL.Agregar(elem2);
+                    if(elem1.MoveNext()) //si tengo elementos en l1, le aplico la operación delegado junto con su correspondiente de la l2
+                        nuevaL.Agregar(delegado((int)elem1.Current, elem2));
+                    else nuevaL.Agregar(elem2); //si no me quedan más elementos en l1, simplemente agrego el resto a la lista.
                 }
             }else{ //lista1 tiene más elementos que lista2
                 IEnumerator elem2 = ElementosDe(l2).GetEnumerator();

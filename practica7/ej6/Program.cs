@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections;
 
-namespace ej1
+namespace ej6
 {
     class Program
     {
@@ -14,7 +14,7 @@ namespace ej1
                 new Persona() {Nombre="José Carlos"},
                 new Perro() {Nombre="Chopper"}
             };
-            lista.Sort(new ComparadorLongitudNombre()); //ordena por longitud de Nombre
+            lista.Sort(new ComparadorLongitudNombre()); //sobrecarga del método con un objeto comparador que implementa IComparer
             foreach (INombrable n in lista)
             {
                 Console.WriteLine($"{n.Nombre.Length}: {n.Nombre}");
@@ -25,19 +25,19 @@ namespace ej1
     //ej6
     interface INombrable
     {
-        public String Nombre {get; set;}
+        String Nombre {get; set;}
     }
 
     class ComparadorLongitudNombre : IComparer
     {
-        public bool Descendente {get; set;} = false;
-        public int Compare(object x, object y)
+        public bool Descendente {get; set;} = false; //permite ordenar ascendente o descendentemente
+        public int Compare(object x, object y) //método del IComparer
         {
             INombrable n1 = x as INombrable;
             INombrable n2 = y as INombrable;
-            int res = n1.Nombre.Length.CompareTo(n2.Nombre.Length);
-            if(Descendente)
-                res = -res;
+            int res = n1.Nombre.Length.CompareTo(n2.Nombre.Length); //comparo longitud de nombres: si n1<n2=-1, si n1>n2=1
+            if(Descendente) //si quiero de mayor a menor
+                res = -res; //hago del resultado negativo, para guardar al revés los res
             return res;
         }
     }
@@ -55,10 +55,10 @@ namespace ej1
         public int CompareTo(object obj){
             string st1 = this.GetType().ToString();
             if((obj as INombrable) == null)
-                return 1;
+                return 1; //lo pongo al final
             string st2 = (obj as INombrable).GetType().ToString();
             int res = st2.CompareTo(st1);
-            if(res != 0)
+            if(res != 0) //si es 0 tienen la misma longitud y tengo que ordenar alfabéticamente
                 return res;
             return this.Nombre.CompareTo((obj as INombrable).Nombre);
         }

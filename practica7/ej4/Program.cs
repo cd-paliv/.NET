@@ -25,7 +25,7 @@ namespace ej1
     //ej4
     interface INombrable
     {
-        public String Nombre {get; set;}
+        String Nombre {get; set;}
     }
     
     class Persona : IAtendible, IComercial, IImportante, INombrable, IComparable
@@ -56,7 +56,8 @@ namespace ej1
         public override string ToString(){
             return $"{Nombre} es un perro";
         }
-        public int CompareTo(object obj){
+        public int CompareTo(object obj) //lista.Sort
+        {
             string st1 = this.Nombre;
             if((obj as INombrable) == null)
                 return 1;

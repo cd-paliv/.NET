@@ -8,7 +8,7 @@ namespace ej7
     {
         static void Main(string[] args)
         {
-            Nodo<int> n = new Nodo<int>(7);
+            Nodo<int> n = new Nodo<int>(7); //al crear Nodo<int> el compilador JIT crea el tipo real(construido)
             n.Insertar(3);
             n.Insertar(1);
             n.Insertar(5);
@@ -22,6 +22,7 @@ namespace ej7
             Console.WriteLine($"Cantidad: {n.CantNodos}");
             Console.WriteLine($"Mínimo: {n.ValorMinimo}");
             Console.WriteLine($"Máximo: {n.ValorMaximo}");
+
             Nodo<string> n2 = new Nodo<string>("hola");
             n2.Insertar("Mundo");
             n2.Insertar("XYZ");

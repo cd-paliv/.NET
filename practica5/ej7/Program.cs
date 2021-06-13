@@ -39,6 +39,11 @@ namespace ej7
 
             //Ej8
             try{
+                /*
+                Console.Write("Ingrese DNI de persona: ");
+                int dniAct = int.Parse(Console.ReadLine());
+                Console.WriteLine($"DNI: {dniAct} = {listap[dniAct].nombre}");*/
+                
                 String nom = listap[8728937].nombre;
                 Console.WriteLine("DNI: 872893 = " + nom);
             }
@@ -59,13 +64,14 @@ namespace ej7
 
     class Persona
     {
+        //las siguientes propiedades de lectura y escritura:
         public string nombre { get; set; }
         public char sexo { get; set; }
         public int DNI { get; set; }
         public DateTime FechaNacimiento { get; set;}
-        public int Edad { get; }
+        public int Edad { get; } //sólo lectura (calculada)
 
-        public object this[int i]
+        public object this[int i] //indizador de lectura/escritura que permita acceder a las propiedades a través de un índice entero.
         {
             get
             {
@@ -76,7 +82,6 @@ namespace ej7
                     case 3: return FechaNacimiento;
                     case 4: return Edad;
                     default: return null;
-
                 }
             }
             set
@@ -96,7 +101,7 @@ namespace ej7
         }
 
         public void imprimir(){
-            Console.WriteLine("Nombre " + this[0] + " - DNI " + this[2]);
+            Console.WriteLine("Nombre " + this[0] + " - DNI " + this[2]); //[0] = nombre, [2] = DNI
         }
     }
     //ejercicio 8
@@ -105,7 +110,7 @@ namespace ej7
         private Hashtable ht = new Hashtable();
         public void Agregar(Persona p)
         {
-            ht[p.DNI] = p;
+            ht[p.DNI] = p; //agrego la persona y le asigno la clave p.DNI para poder acceder a ella
         }
 
         public Persona this[int nro]
@@ -123,15 +128,17 @@ namespace ej7
         {
             get{
                 ArrayList aux = new ArrayList();
-                foreach(DictionaryEntry elem in ht){
+                foreach(DictionaryEntry elem in ht){ //agrego cada persona a una lista
                     Persona p = (Persona) elem.Value;
                     if(p.nombre[0] == c){
                         aux.Add(p.nombre);
                     }
                 }
-                String[] vector = aux.ToArray(typeof(String)) as String[];
-                return vector;
+                String[] vector = aux.ToArray(typeof(String)) as String[]; //paso la lista a array
+                return vector; //
             }
+            //aux.ToArray(typeof(String)) copia los elementos de aux a un array de strings
+            //as String[] hace una conversión implícita de array a String[]
         }
     }
 }

@@ -21,20 +21,23 @@ namespace ej8
     }
 
     abstract class Empleado{
+        //propiedades públicas de sólo lectura
         public String nombre {get;}
         public int DNI {get;}
         public DateTime FechaDeIngreso {get;}
         public double SalarioBase {get; protected set;}
-        public abstract double Salario { get; } //propiedad abstracta ya que dependiendo del tipo de empleado se calcula de una manera u otra
-        protected int antiguedad(DateTime FechaActual){
-            if(FechaDeIngreso.CompareTo(FechaActual) < 0){
+        protected abstract double Salario { get; } //propiedad abstracta ya que dependiendo del tipo de empleado se calcula de una manera u otra
+        protected int antiguedad(DateTime FechaActual)
+        {
+            if(FechaDeIngreso.CompareTo(FechaActual) < 0){ //compareTo Less than zero = This instance.precedes(value). 
                 return FechaActual.Year - FechaDeIngreso.Year -1;
             }else{
                 return FechaActual.Year - FechaDeIngreso.Year;
             }
         }
 
-        protected Empleado(String nom, int DNI, DateTime Fecha, double SalarioBase){
+        protected Empleado(String nom, int DNI, DateTime Fecha, double SalarioBase)
+        {
             this.nombre = nom;
             this.DNI = DNI;
             this.FechaDeIngreso = Fecha;
@@ -46,7 +49,7 @@ namespace ej8
 
     class Administrativo : Empleado {
         public double Premio {get; set;}
-        public override double Salario { get => SalarioBase + Premio; }
+        protected override double Salario { get => SalarioBase + Premio; }
 
         public Administrativo(String nom, int DNI, DateTime Fecha, double SalarioBase) : base(nom, DNI, Fecha, SalarioBase){
             //this.Premio = Premio;
@@ -63,7 +66,7 @@ namespace ej8
 
     class Vendedor : Empleado {
         public double Comision {get; set;}
-        public override double Salario { get => SalarioBase + Comision; }
+        protected override double Salario { get => SalarioBase + Comision; }
 
         public Vendedor(String nom, int DNI, DateTime Fecha, double SalarioBase) : base(nom, DNI, Fecha, SalarioBase){
             //this.Comision = Comision;

@@ -6,7 +6,7 @@ namespace ej10
 {
     class Program
     {
-        static ArrayList lista = new ArrayList();
+        static ArrayList lista = new ArrayList(); //constante
         static void Main(string[] args)
         {
             int opc = opciones();
@@ -70,24 +70,27 @@ namespace ej10
         //case 2
         private static void CargarListaEnMemoria()
         {
-            StreamReader sr = new StreamReader("fuente.txt");
-            while (! sr.EndOfStream)
+            using (StreamReader sr = new StreamReader("fuente.txt"))
             {
-                Auto a = new Auto(sr.ReadLine(), sr.ReadLine());
-                lista.Add(a);
+                while (! sr.EndOfStream)
+                {
+                    Auto a = new Auto(sr.ReadLine(), sr.ReadLine());
+                    lista.Add(a);
+                }
             }
-            sr.Close();
             Console.WriteLine("Lista cargada");
         }
 
         //case 3
         private static void GuardarListaEnTxt()
         {
-            StreamWriter archivotxt = new StreamWriter("autos-3.txt");
-            foreach (Auto a in lista)
+            using (StreamWriter archivotxt = new StreamWriter("autos-3.txt"))
             {
-                archivotxt.WriteLine(a.Marca);
-                archivotxt.WriteLine(a.Modelo);
+                foreach (Auto a in lista)
+                {
+                    archivotxt.WriteLine(a.Marca);
+                    archivotxt.WriteLine(a.Modelo);
+                }
             }
             Console.WriteLine("Lista exportada");
         }

@@ -27,10 +27,11 @@ namespace ej8
             Console.ReadKey();
         }
 
+        //bloques iteradores: bloque de código que contiene una o más sentencias yield.
         public static IEnumerable Rango(int i, int j, int p)
         {
             for(int x = i; x <= j; x += p){
-                yield return x;
+                yield return x; //yield return devuelve un elemento de una colección y mueve la posición al siguiente elemento
             }
         }
 

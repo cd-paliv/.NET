@@ -9,13 +9,13 @@ namespace ej4
     {
         static void Main(string[] args)
         {
-            ListaGenerica<int> lista = new ListaGenerica<int>();
+            ListaGenerica<int> lista = new ListaGenerica<int>(); //debo crear clase ListaGenerica<T>
             lista.AgregarAdelante(3);
             lista.AgregarAdelante(100);
             lista.AgregarAtras(10);
             lista.AgregarAtras(11);
             lista.AgregarAdelante(0);
-            IEnumerator<int> enumerador = lista.GetEnumerator();
+            IEnumerator<int> enumerador = lista.GetEnumerator(); //que implemente IEnumerable<T>
             while (enumerador.MoveNext())
             {
                 int i = enumerador.Current;
@@ -64,7 +64,6 @@ namespace ej4
 
         public IEnumerator<T> GetEnumerator()
         {
-            
             Nodo<T> actual = _nodo;
             while(actual != null){
                 yield return actual.Valor;

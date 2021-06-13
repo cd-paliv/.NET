@@ -5,7 +5,6 @@ C:\Users\paliv\proyectosDotnet\practica7\ej6\bin\Debug\net5.0\ej6.runtimeconfig.
 C:\Users\paliv\proyectosDotnet\practica7\ej6\bin\Debug\net5.0\ej6.dll
 C:\Users\paliv\proyectosDotnet\practica7\ej6\bin\Debug\net5.0\ref\ej6.dll
 C:\Users\paliv\proyectosDotnet\practica7\ej6\bin\Debug\net5.0\ej6.pdb
-C:\Users\paliv\proyectosDotnet\practica7\ej6\obj\Debug\net5.0\ej6.csprojAssemblyReference.cache
 C:\Users\paliv\proyectosDotnet\practica7\ej6\obj\Debug\net5.0\ej6.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\paliv\proyectosDotnet\practica7\ej6\obj\Debug\net5.0\ej6.AssemblyInfoInputs.cache
 C:\Users\paliv\proyectosDotnet\practica7\ej6\obj\Debug\net5.0\ej6.AssemblyInfo.cs
@@ -14,3 +13,4 @@ C:\Users\paliv\proyectosDotnet\practica7\ej6\obj\Debug\net5.0\ej6.dll
 C:\Users\paliv\proyectosDotnet\practica7\ej6\obj\Debug\net5.0\ref\ej6.dll
 C:\Users\paliv\proyectosDotnet\practica7\ej6\obj\Debug\net5.0\ej6.pdb
 C:\Users\paliv\proyectosDotnet\practica7\ej6\obj\Debug\net5.0\ej6.genruntimeconfig.cache
+C:\Users\paliv\proyectosDotnet\practica7\ej6\obj\Debug\net5.0\ej6.csproj.AssemblyReference.cache

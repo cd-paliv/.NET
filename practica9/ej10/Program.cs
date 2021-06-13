@@ -4,7 +4,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ej8
+namespace ej10
 {
     class Program
     {
@@ -14,26 +14,27 @@ namespace ej8
             String nomArchivo1 = Console.ReadLine();
             StreamReader sr1 = null;
 
-            Console.Write("Ingrese nombre del primer archivo: ");
+            Console.Write("Ingrese nombre del segundo archivo: ");
             String nomArchivo2 = Console.ReadLine();
             StreamReader sr2 = null;
 
             Console.WriteLine("----------------------------------------------\n");
-            List<string> lista1;
-            List<string> lista2;
-
+            //List<string> lista1;
+            //List<string> lista2;
+//HAY QUE USAR CONVERTALL
             try{
-                sr1 = new StreamReader(nomArchivo1);
+                sr1 = new StreamReader(nomArchivo1); //si no existen los archivos va a dar error
                 sr2 = new StreamReader(nomArchivo2);
-                lista1 = ArchivoToLista(sr1);
-                lista2 = ArchivoToLista(sr2);
+                List<string> lista1 = ArchivoToLista(sr1); //guardo el contenido del archivo en una lista
+                List<string> lista2 = ArchivoToLista(sr2);
 
-                IEnumerable<string> list = lista1.Intersect(lista2);
+                IEnumerable<string> list = lista1.Intersect(lista2); //junto las dos listas en una sin repetidos
+                
                 List<int> posArchivo = new List<int>();
                 foreach(string p in list){
                     Console.WriteLine($"Palabra \"{p}\"");
                     
-                    posArchivo = GetPosiciones(p, sr1);
+                    posArchivo = GetPosiciones(p, sr1); //obtengo la posicion de la palabra p en el archivo 1
                     Console.Write("     |--Posiciones en Texto1:----->");
                     foreach(int pos in posArchivo){
                         Console.Write($" {pos}");
@@ -44,7 +45,7 @@ namespace ej8
                     foreach(int pos in posArchivo){
                         Console.Write($" {pos}");
                     }
-
+                    
                     Console.WriteLine("\n");
                 }
             }

@@ -5,16 +5,12 @@ namespace ej4
 {
     class Program
     {
-        private delegate void Imp(object o);
         static void Main(string[] args)
         {
-            //Imp i1 = new Imp(Imprimir);
-
             Task[] v = new Task[100];
-            //Imp i1 = new Imp( () => Imprimir(v.Length) );
             for(int i = 0; i < 100 ; i++)
             {
-                v[i] = Task.Factory.StartNew( () => new Imp(Imprimir) );
+                v[i] = Task.Factory.StartNew(Imprimir, i);
             }
             
             Task.WaitAll(v);

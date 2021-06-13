@@ -15,11 +15,11 @@ namespace ej8
 
             try{
                 sr = new StreamReader(nomArchivo);
-                SortedDictionary<string, int> dic = new SortedDictionary<string, int>();
+                SortedDictionary<string, int> dic = new SortedDictionary<string, int>(); //<tipoLlave, tipoValor> en el diccionario
                 while(! sr.EndOfStream)
                 {
-                    String linea = sr.ReadLine();
-                    string[] vString = linea.Split(' ');
+                    String linea = sr.ReadLine(); //leo linea
+                    string[] vString = linea.Split(' '); //guardo linea en un vector de string, separando cada palabra
                     foreach(string palabra in vString){
                         if(palabra != ""){
                             if(dic.ContainsKey(palabra)){
@@ -40,7 +40,7 @@ namespace ej8
             }
             finally{
                 if(sr != null){
-                    sr.Dispose();
+                    sr.Dispose(); //no necesito más el objeto, libero memoria.
                 }
             }
             Console.ReadKey();

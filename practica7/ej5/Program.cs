@@ -14,7 +14,7 @@ namespace ej1
                 new Persona() {Nombre="Carlos"},
                 new Perro() {Nombre="Chopper"},
             };
-            lista.Sort(); //debe ordenar por Nombre alfabéticamente
+            lista.Sort(); //debe ordenar por Nombre alfabéticamente: primero personas después perros
             foreach (INombrable n in lista)
             {
                 Console.WriteLine($"{n.Nombre}: {n}");
@@ -25,7 +25,7 @@ namespace ej1
     //ej4
     interface INombrable
     {
-        public String Nombre {get; set;}
+        String Nombre {get; set;}
     }
     
     class Persona : IAtendible, IComercial, IImportante, INombrable, IComparable
@@ -51,10 +51,10 @@ namespace ej1
             if((obj as INombrable) == null)
                 return 1;
             string st2 = (obj as INombrable).GetType().ToString();
-            int res = st2.CompareTo(st1);
-            if(res != 0)
+            int res = st2.CompareTo(st1); //hago la comparacion de tipos
+            if(res != 0) //-1=perro | 1=persona
                 return res;
-            return this.Nombre.CompareTo((obj as INombrable).Nombre);
+            return this.Nombre.CompareTo((obj as INombrable).Nombre); //si da 0 son del mismo tipo x lo cual tengo que comparar por nombre
         }
     }
 

@@ -1,0 +1,29 @@
+using System;
+using System.Collections;
+
+namespace ej1
+{
+    class ejemplo
+    {
+        static void Main(string[] args)
+        {
+            ArrayList lista = new ArrayList() {
+                new Persona() {Nombre="Zulema"},
+                new Perro() {Nombre="Sultán"}
+            };
+            
+            string st1="", st2="";
+            
+            foreach (INombrable n in lista)
+            {
+                if(n is Persona){
+                    st1 = n.GetType().ToString();
+                }else{
+                    st2 = n.GetType().ToString();
+                }
+            }
+            int res = st2.CompareTo(st1);
+            Console.WriteLine(res);
+        }
+    }
+}

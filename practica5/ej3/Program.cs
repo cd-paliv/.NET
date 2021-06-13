@@ -37,9 +37,9 @@ namespace ej3
         private static int cantExt = 0; //extracciones
         private static double totExt = 0;
         private static int totDenegadas = 0;
-        private static ArrayList _cuentas { get; } = new ArrayList(); //EJ 3 ES EL GET
+        private static ArrayList _cuentas { get; } = new ArrayList(); //EJ 3 ES EL GET: propiedad readonly autoimplementada
         //private static readonly ArrayList _deMentira = (ArrayList)_cuentas.Clone();
-        private int _ID { get; } //datos de cada cuenta
+        private int _ID { get; } //no quiero que me modifiquen el id :(
         private double _monto;
 
         public Cuenta()
@@ -69,7 +69,8 @@ namespace ej3
             }
             else{
                 _monto -= valor;
-                cantExt++; totExt += valor;
+                cantExt++;
+                totExt += valor;
                 Console.WriteLine($"Se extrajo {valor} de la cuenta {_ID} (Saldo = {_monto})");
                 return this;
             }

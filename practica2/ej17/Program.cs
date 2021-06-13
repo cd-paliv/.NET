@@ -8,7 +8,7 @@ namespace ej17
         {
             int nro = int.Parse(args[0]);
             int res;
-            Fac(nro, out res);
+            Fac(nro, out res); //nro!
             Console.WriteLine("FacA " + res);
             FacR(nro, out res);
             Console.WriteLine("FacB " + res);

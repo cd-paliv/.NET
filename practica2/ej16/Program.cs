@@ -28,7 +28,7 @@ namespace ej16
             return n*FacR(n-1);
         }
 
-        //C - EBM
+        //C - Expression-Bodied Method (x ? y : z)
         static int FacE(int n) => n==1 ? 1 : n*FacE(n-1);
     }
 }

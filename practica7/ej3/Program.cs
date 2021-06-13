@@ -29,14 +29,14 @@ namespace ej1
     //ej3
     interface IComercial
     {
-        public void Importa();
+        void Importa();
     }
     interface IImportante
     {
-        public void Importa();
+        void Importa();
     }
 
-    class Auto : IVendible, ILavable, IReciclable, IComercial, IImportante
+    class Auto : IVendible, ILavable, IReciclable, IComercial, IImportante //auto está obligado a implementar métodos de interfaces que implementa
     {
         public void SeVendeA(Persona p) => Console.WriteLine("Vendiendo auto a persona");
         public void SeLava() => Console.WriteLine("Lavando auto");
@@ -73,8 +73,8 @@ namespace ej1
 
     interface IAlquilable
     {
-        public void SeAlquilaA(Persona p);
-        public void SeDevuelve(Persona p);
+        void SeAlquilaA(Persona p);
+        void SeDevuelve(Persona p);
     }
     interface IVendible
     {
