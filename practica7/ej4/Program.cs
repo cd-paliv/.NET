@@ -39,9 +39,9 @@ namespace ej1
             return $"{Nombre} es una persona";
         }
         public int CompareTo(object obj){
-            string st1 = this.Nombre;
+            string st1 = this.Nombre;/*
             if((obj as INombrable) == null)
-                return 1;
+                return 1;*/
             return st1.CompareTo((obj as INombrable).Nombre);
         }
     }
@@ -58,9 +58,9 @@ namespace ej1
         }
         public int CompareTo(object obj) //lista.Sort
         {
-            string st1 = this.Nombre;
+            string st1 = this.Nombre;/*
             if((obj as INombrable) == null)
-                return 1;
+                return 1;*/
             return st1.CompareTo((obj as INombrable).Nombre);
         }
     }

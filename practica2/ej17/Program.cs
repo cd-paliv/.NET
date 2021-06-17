@@ -15,7 +15,7 @@ namespace ej17
         }
 
         //A
-        static void Fac(int n, out int f){
+        static void Fac(int n, out int f){ //out: puede inicializar la variable en el método
             f = 1;
             for (int i = 2; i <= n; i++){
                 f *= i;

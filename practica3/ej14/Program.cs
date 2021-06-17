@@ -15,8 +15,8 @@ namespace ej14
             Console.WriteLine("-----------------------------------------------");
             Console.Write($"Numero: {n} | Base {b} \nResultado: ");
             if (b == 2 || b == 8) Bases(n,b);
-            else Console.Write(Hexa(n));
-            Console.WriteLine();
+            else Hexa(n);
+
             Console.ReadKey();
         }
 
@@ -32,7 +32,7 @@ namespace ej14
             while (pila.Count > 0) Console.Write(pila.Pop());
         }
 
-        static String Hexa(int nro)
+        static void Hexa(int nro)
         {
             Stack pila = new Stack();
             while(nro > 0){
@@ -41,12 +41,9 @@ namespace ej14
                 else pila.Push(getValores(resto));
                 nro = nro / 16;
             }
-            
             String st = "";
             while(pila.Count > 0) st += pila.Pop();
-            
-            return st;
-
+            Console.WriteLine(st);
         }
         static String getValores(int nro)
         {

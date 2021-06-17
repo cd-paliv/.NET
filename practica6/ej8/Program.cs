@@ -7,9 +7,9 @@ namespace ej8
         static void Main(string[] args)
         {
             Empleado[] empleados = new Empleado[] {
-                new Administrativo("Ana", 20000000, DateTime.Parse("26/4/2018"), 10000) {Premio=1000},
-                new Vendedor("Diego", 30000000, DateTime.Parse("2/4/2010"), 10000) {Comision=2000},
-                new Vendedor("Luis", 33333333, DateTime.Parse("30/12/2011"), 10000) {Comision=2000}
+                new Administrativo("Ana", 20000000, DateTime.Parse("14/6/2019"), 10000) {Premio=1000},
+                new Vendedor("Diego", 30000000, DateTime.Parse("2/4/2011"), 10000) {Comision=2000},
+                new Vendedor("Luis", 33333333, DateTime.Parse("30/12/2012"), 10000) {Comision=2000}
             };
             foreach (Empleado e in empleados)
             {
@@ -29,7 +29,7 @@ namespace ej8
         protected abstract double Salario { get; } //propiedad abstracta ya que dependiendo del tipo de empleado se calcula de una manera u otra
         protected int antiguedad(DateTime FechaActual)
         {
-            if(FechaDeIngreso.CompareTo(FechaActual) < 0){ //compareTo Less than zero = This instance.precedes(value). 
+            if(FechaDeIngreso.CompareTo(FechaActual) > 0){ //compareTo Less than zero = This instance.precedes(value). 
                 return FechaActual.Year - FechaDeIngreso.Year -1;
             }else{
                 return FechaActual.Year - FechaDeIngreso.Year;
@@ -65,7 +65,7 @@ namespace ej8
     }
 
     class Vendedor : Empleado {
-        public double Comision {get; set;}
+        public double Comision { get; set; }
         protected override double Salario { get => SalarioBase + Comision; }
 
         public Vendedor(String nom, int DNI, DateTime Fecha, double SalarioBase) : base(nom, DNI, Fecha, SalarioBase){

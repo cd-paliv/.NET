@@ -10,35 +10,19 @@ namespace ej13
         static void Main(string[] args)
         {
             Console.Write("Ingrese el nombre del archivo: ");
-            Task<int> t = ContenidoAsync(Console.ReadLine());
+            Task<int> t = ContenidoAsync2(Console.ReadLine());
             
             Console.WriteLine(t.Result); //9
 
             Console.ReadKey();
         }
 
-        static async Task<int> ContenidoAsync(string nombre)
+        static async Task<int> ContenidoAsydnc2(string nombre)
         {
-            int cantPalabras = 0;
-            Task tAux = Task.Run( () => 
-            {
-                try{
-                    using (StreamReader sr = new StreamReader(nombre))
-                    {
-                        while(! sr.EndOfStream){
-                            //string[] str = sr.ReadLine().Split(' ');
-                            cantPalabras += sr.ReadLine().Split(' ').Length; //spliteo porque quiero cantidad de palabras, no caracteres
-                        }
-                    }
-                }
-                catch(Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                }
-            });
-            //tAux.Start();
-            await tAux;
-            return cantPalabras;
+            string palabras = await ContenidoAsync(nombre);
+            string[] palabrasxd = palabras.Split(' ');
+
+            return palabrasxd.Length;
         }
     }
 }

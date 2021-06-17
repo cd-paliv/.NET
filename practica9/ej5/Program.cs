@@ -124,7 +124,14 @@ namespace ej7
                 }else return this.dato;
             }
         }
-
+/*
+        public T vm()
+        {
+            if(HD == null) return HD.dato;
+            else{
+                HD.vm();
+            }
+        }*/
         public T ValorMinimo
         {
             get{
